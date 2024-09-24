@@ -1,0 +1,14 @@
+.about-name {
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about-me {
+  font-size: 13px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
