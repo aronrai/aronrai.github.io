@@ -2,111 +2,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="body.css">
-  <link rel="stylesheet" href="header.css">
+  <title>Aron Rai &#x2022; Web Developer</title>
+  <link rel="stylesheet" href="main-container.css">
+  <link rel="stylesheet" href="head.css">
   <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="contacts.css">
-  <link rel="stylesheet" href="socials.css">
-  <link rel="stylesheet" href="underdev.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
+  <div id="main-container"> <!--main container-->
 
-  <div class="header">
+    <div class="head">  <!--head section-->
 
-      <div>
+      <div class="hide-on-small-screens">
 
-        <p class="h1h2"><span class="header1">Aron Rai</span> &#x2022; <span class="header2">Web Developer</span></p>
+      <h1 id="h1-1">Aron Rai &#x2022; <span id="heading-s">Web Developer</span></h1>
 
       </div>
 
-      <div id="hide-on-small-screens">
+      <div class="show-on-small-screens">
 
-        <nav>
+        <h1 id="h1-2">Aron Rai &#x2022; <span id="heading-s">Web Developer</h1>
 
-    <ul>
+      </div>
 
-      <li><a href="#about">About</a></li>
+      <div class="hide-on-small-screens">
 
-      <li><a href="#projects">Projects</a></li>
+      <nav>
 
-      <li><a href="#contact">Contact</a></li>
+        <ul>
 
-      <li><a href="#socials">Social</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project-head">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
 
-    </ul>
+        </ul>
 
-        </nav>
+      </nav>
 
-    </div>
-
-  </div>
-
-  <br>
-
-  <br>
-
-  <br>
-  
-  <div id="about">
-
-    <p class="about-name">I'm Aron rai</p>
-    <p class="about-me">
-    Hi, I'm Aron, a passionate frontend web developer with a Bachelor's in Computer Applications (BCA). I specialize
-    in creating responsive, user-friendly web interfaces using modern technologies like React, JavaScript, HTML, and
-    CSS. My goal is to bring creative ideas to life through clean, efficient code, ensuring seamless user experiences.
-    </p>
-
-  </div>
-  
-  <div id="projects">
-
-    <div class="project1">
+      </div>
 
     </div>
 
-  </div>
+    <div id="about">  <!--about section-->
 
-  <div>
+      <h2>About</h2>
 
-    <p class="contact-head">Contact</p>
+      <p>Hi, I'm <b>Aron Rai</b>, a passionate frontend web developer with a Bachelor's in Computer Applications (BCA). I specialize
+      in creating responsive, user-friendly web interfaces using modern technologies like <b>React, JavaScript, HTML, and
+      CSS</b>. My goal is to bring creative ideas to life through clean, efficient code, ensuring seamless user experiences.
+      <br>
+      <br>
+      I'm currently seeking a role as a <b>junior web developer</b> where i can cotribute to a team, continue learning and grow as a developer. I'm passionate about writing clean, maintainable code and bringing creative solutions to life. Ready to collaborate and deliver impactful web experiences.
+      </p>
 
-  </div>
+      <a href="https://github.com/aronrai" target="_blank"><button id="github" class="buttons">GitHub</button></a>
+      <a href="https://www.linkedin.com/in/aron-rai-38829132a" target="_blank"><button id="linkedin" class="buttons">linkedin</button></a>
 
-  <div id="contact">
+    </div>
 
-    <form action="mailto:aron.dumi.rai@gmail.com" method="post" enctype="text/plain">
-
-        <label for="name" class="labels">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email" class="labels">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message" class="labels">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-        <button type="submit" id="submit-btn">Submit</button>
-
-
-    </form>
-
-  </div>
-
-  <div id="socials">
-
-    <p class="connect-w-me">Connect with me</p>
-
-    <button id="github"><a href="https://github.com/aronrai">GitHub</a></button>&nbsp;
-
-    <button id="linkedin"><a href="https://www.linkedin.com/in/aron-rai-38829132a">linkedin</a></button>
-
-  </div>
-
-  <div id="under-dev">
+    <div id="project-head"> <!--projects section-->
     
-    <p id="under-dev-p">This Website is Under Development.</p>
+      <h2 class="projects-title">Projects</h2>
+    
+    </div>
+
+   
+
+    <div class="projects-c" id="projects-id">
+
+      <div class="project-1">
+
+        <h3>To-Do list Web App</h3>
+
+        <p>
+          Technologies used: <b>React, javaScript, CSS, HTML</b>
+          <br>
+          <br>
+          This web application is a simple yet functional to do list built using React. It allows users to add edit, and delete tasks, helping them to manage their daily activities efficiently. The app levereges React's component-based architecture to update the task list dynamically without page reloads, enhancing the user experience.
+        </p>
+
+        <a class="learn-more" href="projects.html" target="_blank">Learn more</a>
+
+      </div>
+
+    </div>
+
+    <div id="contact"> <!--contacts section-->
+
+      <h2>Contact me</h2>
+
+      <form action="mailto:aron.dumi.rai@gmail.com" method="post" enctype="text/plain">
+
+        <label for="name" class="labels">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+<br>
+<br>
+        <label for="email" class="labels">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+<br>
+<br>
+        <label for="message" class="labels">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" required></textarea>
+<br>
+<br>
+        <button tye="submit" id="submit-btn">Sunbmit</button>
+
+      </form>
+
+    </div>
+
+    <footer id="footer">
+
+      <a href="tel:+919564120965" class="foot">+91 9564120965</a>&nbsp;|&nbsp;<a href="mailto:aron.dumi.rai@gmail.com" class="foot">aron.dumi.rai@gmail.com</a>
+
+    </footer>
 
   </div>
 

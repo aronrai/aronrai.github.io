@@ -1,0 +1,59 @@
+.buttons {
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 9px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 25px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+#github {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s;
+}
+
+#github:hover {
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+#github:active {
+  background-color: #333;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+#linkedin {
+  background-color: white;
+  color: royalblue;
+  border: 2px solid royalblue;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s;
+}
+
+#linkedin:hover {
+  background-color: royalblue;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+#linkedin:active {
+  background-color: royalblue;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
