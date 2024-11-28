@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aron Rai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -13,8 +15,8 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div id="particles-js"></div>
     <a id="about" onclick="showabout()" class="animated zoomIn">about</a>
     <a id="projects" onclick="showprojects()" class="animated zoomIn">projects</a>
     <a id="contact" onclick="showcontact()" class="animated zoomIn">contact</a>
@@ -32,8 +34,9 @@
                             class="fab fa-github"></i></a></td>
                 <td class="animated zoomIn"><a class="social" href="https://www.linkedin.com/in/aron-rai-38829132a"
                         target="_blank"><i class="fab fa-linkedin"></i></a></td>
-                <td class="animated zoomIn"><a class="social" href="mailto:aron.dumi.rai@gmail.com?subject=Hello&body=I have a question"
-                        target="_blank"><i class="fas fa-envelope"></i></a></td>
+                <td class="animated zoomIn"><a class="social"
+                        href="mailto:aron.dumi.rai@gmail.com?subject=Hello&body=I have a question" target="_blank"><i
+                            class="fas fa-envelope"></i></a></td>
                 <td class="animated zoomIn"><a class="social" href="tel:+919564120965" target="_blank"><i
                             class="fas fa-phone"></i></a>
                 </td>
@@ -112,7 +115,7 @@
             <h2>contact me</h2>
             <p>
             <form action="https://formspree.io/f/xyzyndbb" method="POST">
-                <input type="text" placeholder="name" name="name"required>
+                <input type="text" placeholder="name" name="name" required>
                 <input type="email" placeholder="email" name="email" required><br>
                 <textarea placeholder="message" name="textarea" required rows="5"></textarea><br>
                 <button class="btn_one" type="submit">send</button>
@@ -121,20 +124,6 @@
         </section>
     </div>
     <script src="index.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 100 },
-                color: { value: "#ffffff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 2 },
-                line_linked: { enable: false },
-                move: { speed: 1 },
-            },
-        });
-    </script>
 </body>
 
 </html>
