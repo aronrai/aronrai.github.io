@@ -42,6 +42,7 @@ function showabout() {
   setTimeout(function () {
     $("#about_container").removeClass("animated slideInLeft");
   }, 800);
+  document.querySelector("#hide-on-sec").style.visibility = "hidden";
 }
 function closeabout() {
   $("#about_container").addClass("animated slideOutLeft");
@@ -49,6 +50,9 @@ function closeabout() {
     $("#about_container").removeClass("animated slideOutLeft");
     $("#about_container").css("display", "none");
   }, 800);
+  setTimeout(function () {
+  document.querySelector("#hide-on-sec").style.visibility = "visible";
+  }, 500);
 }
 function showprojects() {
   $("#projects_container").css("display", "inherit");
@@ -56,6 +60,7 @@ function showprojects() {
   setTimeout(function () {
     $("#projects_container").removeClass("animated slideInRight");
   }, 800);
+  document.querySelector("#hide-on-sec").style.visibility = "hidden";
 }
 function closeprojects() {
   $("#projects_container").addClass("animated slideOutRight");
@@ -63,6 +68,9 @@ function closeprojects() {
     $("#projects_container").removeClass("animated slideOutRight");
     $("#projects_container").css("display", "none");
   }, 800);
+  setTimeout(function () {
+  document.querySelector("#hide-on-sec").style.visibility = "visible";
+  }, 500);
 }
 function showcontact() {
   $("#contact_container").css("display", "inherit");
@@ -70,6 +78,7 @@ function showcontact() {
   setTimeout(function () {
     $("#contact_container").removeClass("animated slideInUp");
   }, 800);
+  document.querySelector("#hide-on-sec").style.visibility = "hidden";
 }
 function closecontact() {
   $("#contact_container").addClass("animated slideOutDown");
@@ -77,4 +86,7 @@ function closecontact() {
     $("#contact_container").removeClass("animated slideOutDown");
     $("#contact_container").css("display", "none");
   }, 800);
+  setTimeout(function () {
+  document.querySelector("#hide-on-sec").style.visibility = "visible";
+  }, 500);
 }

@@ -9,21 +9,20 @@
      <link rel="icon" type="image/x-icon" href="icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div id="hide-on-sec">
     <a id="about" onclick="showabout()" class="animated zoomIn">about</a>
     <a id="projects" onclick="showprojects()" class="animated zoomIn">projects</a>
     <a id="contact" onclick="showcontact()" class="animated zoomIn">contact</a>
     <div id="middle">
         <h1 class="animated zoomIn">Aron Rai</h1>
-        <h2 class="animated zoomIn">Web Developer / Gamer / Living</h2>
+        <h2 class="animated zoomIn">Web Developr &nbsp;,&nbsp; Fast Learner &nbsp;,&nbsp; Gamer</h2>
         <div id="menu">
             <a onclick="showabout()" class="animated zoomIn">about</a>
             <a onclick="showprojects()" class="animated zoomIn">projects</a>
@@ -39,10 +38,11 @@
                         href="mailto:aron.dumi.rai@gmail.com?subject=Hello&body=I have a question" target="_blank"><i
                             class="fas fa-envelope"></i></a></td>
                 <td class="animated zoomIn"><a class="social" href="tel:+919564120965" target="_blank"><i
-                            class="fas fa-phone"></i></a>
+                            class="fas fa-phone-flip"></i></a>
                 </td>
             </tr>
         </table>
+    </div>
     </div>
     <div id="projects_container" class="container">
         <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
@@ -58,8 +58,14 @@
                 and CSS work together to create an intuitive and visually appealing layout, while JavaScript adds
                 dynamic functionality and responsiveness, enabling smooth task management and real-time updates.
             </p>
-            <a href="https://github.com/aronrai/To-Do-List" target="_blank"><button class="btn_one">Github
-                    repo</button></a>
+            <a href="https://aronrai.github.io/To-Do-List/" target="_blank"><button class="btn">Live</button></a>
+        </section>
+        <section>
+            <h2>Weather Web App</h2>
+            <p>
+                This Weather Web App is a simple yet functional project designed to provide real-time weather updates and a 5-day forecast for any location. Built using HTML, CSS, and JavaScript, and powered by a OpenWeather API, the app displays key weather details like temperature, humidity, wind speed, and conditions in a clean and responsive interface. This project highlights fundamental front-end development skills and demonstrates how to integrate APIs to create practical and user-friendly applications.
+            </p>
+            <a href="https://aronrai.github.io/Weather/" target="_blank"><button class="btn">Live</button></a>
         </section>
     </div>
     <div id="about_container" class="container">
@@ -72,8 +78,8 @@
                 strive to create seamless, functional, and visually appealing digital experiences.
             </p>
             <p>
-                During my studies, I gained proficiency in languages and frameworks such as HTML, CSS, JavaScript, and
-                React, as well as experience with backend technologies like Node.js and databases like MySQL. My
+                During my studies, I gained proficiency in languages and frameworks such as HTML, CSS, JavaScript, Bootstrap and
+                React, as well as experience with backend technologies like PHP and databases like MySQL. My
                 academic background in Computer Applications has equipped me with a strong understanding of programming
                 concepts, problem-solving skills, and a commitment to continuous learning.
             </p>
@@ -97,15 +103,34 @@
             </p>
         </section>
         <section>
-            <h2>skills</h2>
-            <p>
-                <i class="fab fa-html5 fa-2x"></i>&nbsp;&nbsp;
-                <i class="fab fa-css3-alt fa-2x"></i>&nbsp;&nbsp;
-                <i class="fab fa-js-square fa-2x"></i>&nbsp;&nbsp;
-                <i class="fab fa-react fa-2x"></i>&nbsp;&nbsp;
-                <i class="fab fa-node fa-2x"></i>&nbsp;&nbsp;
+            <h2>Languages and Databases</h2>
+            <p class="gaps">
+                <i class="fab fa-html5 fa-2x"></i>
+                <i class="fab fa-css3-alt fa-2x"></i>
+                <i class="fab fa-js-square fa-2x"></i>
+                <i class="fab fa-php fa-2x"></i>
                 <i class="fas fa-database fa-2x"></i>
             </p>
+        </section>
+        <section>
+            <h2>Libraries and Frameworks</h2>
+            <p class="gaps">
+                <i class="fab fa-bootstrap fa-2x"></i>
+                <i class="fab fa-react fa-2x"></i>
+            </p>
+        </section>
+        <section>
+            <h2>Other</h2>
+            <p class="gaps">
+                <i class="fab fa-git-alt fa-2x"></i>
+                <i class="fab fa-figma fa-2x"></i>
+            </p>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <h3 style="text-align: center;">
+                "Responsive Web Design" By <a href="https://www.freecodecamp.org/certification/aronrai/responsive-web-design" target="_blank" class="certification-link">freeCodeCamp</a>.
+            </h3>
         </section>
     </div>
     <div id="contact_container" class="container">
@@ -114,10 +139,10 @@
         <section>
             <p>
             <form action="https://formspree.io/f/xyzyndbb" method="POST">
-                <input type="text" placeholder="name" name="name" required>
-                <input type="email" placeholder="email" name="email" required><br>
-                <textarea placeholder="message" name="textarea" required rows="5"></textarea><br>
-                <button class="btn_one" type="submit">send</button>
+                <input type="text" placeholder="name" id="input-box" name="name" required>
+                <input type="email" placeholder="email" id="input-box" name="email" required><br>
+                <textarea placeholder="message" id="input-box" name="textarea" required rows="5"></textarea><br>
+                <button class="btn" type="submit">send</button>
             </form>
             </p>
         </section>
