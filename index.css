@@ -136,40 +136,40 @@
   #skills {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
     justify-content: flex-start;
   }
   
   .skills-gap {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
   }
   
   #education {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
     justify-content: flex-start;
   }
   
   #services {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
     justify-content: flex-start;
   }
   
   #contact {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
   }
   
   form {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
   }
   
   form input,

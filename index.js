@@ -11,19 +11,15 @@ var typed = new Typed('#element', {
 document
   .getElementById("whatsappForm")
   .addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
-    // Get input values
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
 
-    // Phone number to send the message to (include country code, e.g., 919876543210 for India)
     const phoneNumber = "+919564120965";
 
-    // Create the WhatsApp message
     const whatsappMessage = `Hello, my name is ${name}. ${message}`;
 
-    // Redirect to WhatsApp
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
         whatsappMessage
