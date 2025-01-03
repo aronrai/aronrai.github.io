@@ -20,9 +20,14 @@
     font-size: 4rem;
     font-weight: normal;
     font-family: serif;
+    text-shadow: 0px 0px 4px #373A40;
     letter-spacing: 0.5rem;
     color: #373A40;
-    border-bottom: 1px solid #373A40;
+    border: none;
+    border-top: 2px solid #373A40;
+    border-top-left-radius: 4rem;
+    border-bottom: 2px solid #373A40;
+    border-bottom-right-radius: 4rem;
   }
   
   h2 {
@@ -32,6 +37,11 @@
     letter-spacing: 0.2rem;
     font-family: serif;
     font-weight: normal;
+    text-shadow: 0px 0px 2px #373A40;
+    border: none;
+    border-bottom: 2px solid #373A40;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
   }
   
   h3 {
@@ -41,6 +51,7 @@
     letter-spacing: 0.2rem;
     font-family: serif;
     font-weight: normal;
+    text-shadow: 0px 0px 2px #373A40;
   }
   
   p {
@@ -48,6 +59,7 @@
     font-size: 1rem;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
+    text-shadow: 0px 0px 1px #373A40;
   }
   
   section {
@@ -65,9 +77,16 @@
   }
   
   #element {
+    font-family: serif;
+    color: #373A40;
     height: 2rem;
+    text-shadow: 0px 0px 2px #373A40;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
+    border: none;
+    border-bottom: 2px solid #373A40;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1rem;
   }
   
   #about {
@@ -87,6 +106,7 @@
   
   #works > h2 {
     align-self: flex-start;
+    width: 100%;
   }
   
   #works > a {
@@ -111,6 +131,10 @@
   
   .work-list:hover {
     transform: scale(1.05);
+  }
+
+  .work-list h3 {
+    text-align: center;
   }
   
   .social-links {
@@ -188,6 +212,7 @@
     font-size: 1.5rem;
     font-family: serif;
     color: #373A40;
+    text-shadow: 0px 0px 2px #373A40;
   }
   
   footer {
