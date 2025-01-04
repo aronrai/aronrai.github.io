@@ -116,10 +116,12 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    transition: all 0.3s;
   }
   
   .work-list:hover {
     transform: scale(1.05);
+    transform: rotate(5deg);
   }
 
   .work-list h3 {
