@@ -6,8 +6,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #EEEEEE;
-    color: #686D76;
+    color: black;
   }
   
   body::-webkit-scrollbar {
@@ -20,31 +19,28 @@
     font-size: 4rem;
     font-weight: normal;
     font-family: serif;
-    text-shadow: 0px 0px 4px #373A40;
+    text-shadow: 4px 4px 5px black;
     letter-spacing: 0.5rem;
-    color: #373A40;
     border: none;
-    border-bottom: 1px solid #373A40;
+    border-bottom: 1px solid black;
   }
   
   h2 {
-    color: #373A40;
     margin: 0;
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-family: serif;
     font-weight: normal;
-    text-shadow: 0px 0px 2px #373A40;
+    text-shadow: 2px 2px 3px black;
   }
   
   h3 {
-    color: #373A40;
     margin: 0;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     font-family: serif;
     font-weight: normal;
-    text-shadow: 0px 0px 2px #373A40;
+    text-shadow: 1px 1px 2px black;
   }
   
   p {
@@ -52,12 +48,11 @@
     font-size: 1rem;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
-    text-shadow: 0px 0px 1px #373A40;
+    text-shadow: 0px 0px 1px black;
   }
   
   section {
     padding: 30px;
-    background: #EEEEEE;
   }
   
   #home {
@@ -71,9 +66,8 @@
   
   #element {
     font-family: serif;
-    color: #373A40;
     height: 2rem;
-    text-shadow: 0px 0px 2px #373A40;
+    text-shadow: 1px 1px 2px black;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
   }
@@ -100,28 +94,34 @@
   
   #works > a {
     text-decoration: none;
-    color: #686D76;
+    color: black;
   }
   
   .work-list {
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #686D76;
+    box-shadow: 0px 0px 10px black;
     height: 350px;
     width: 85vw;
     transform-origin: center;
-    transition: transform 0.15s ease;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
-    transition: all 0.3s;
+    animation: scale-animation 2s ease-in-out infinite;
   }
-  
-  .work-list:hover {
-    transform: scale(1.05);
-    transform: rotate(5deg);
+
+  @keyframes scale-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   .work-list h3 {
@@ -137,15 +137,30 @@
   }
   
   .fa-linkedin {
-    color: #0077B5;
+    color: black;
+    animation: logo-animation 2s ease-in-out infinite;
   }
   
   .fa-github {
-    color: #181717;
+    color: black;
+    animation: logo-animation 2s ease-in-out infinite;
   }
   
   .fa-envelope {
-    color: #D44638;
+    color: black;
+    animation: logo-animation 2s ease-in-out infinite;
+  }
+
+  @keyframes logo-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   
   #skills {
@@ -191,19 +206,25 @@
   form textarea, button {
     padding: 10px;
     font-size: 1rem;
-    color: #686D76;
     border: none;
     background: transparent;
-    border-bottom: 1px solid #373A40;
+    border-bottom: 1px solid black;
     outline: none;
   }
+
+  /* input::placeholder {
+    color: rgba(0, 0, 0, 0.700);
+  }
+
+  textarea::placeholder {
+    color: black;
+  } */
   
   button {
     border-bottom: none;
     font-size: 1.5rem;
     font-family: serif;
-    color: #373A40;
-    text-shadow: 0px 0px 2px #373A40;
+    text-shadow: 1px 1px 2px black;
   }
   
   footer {
