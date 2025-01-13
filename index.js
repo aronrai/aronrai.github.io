@@ -1,7 +1,7 @@
 //typed js
 var typed = new Typed('#element', {
   strings: ['Full stack Web Developer.', 'PERN Stack.', 'Fast Learner.'],
-  typeSpeed: 50,
+  typeSpeed: 60,
   loop: true,
   showCursor: false,
 });
