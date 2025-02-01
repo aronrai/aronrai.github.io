@@ -41,7 +41,7 @@ const Works = () => {
         </div>
         <div className="works-card">
           <img
-            // src="/src/assets/restaurant.png"
+            src=""
             alt="random quotes image."
           />
           <h3>Random Quotes</h3>
