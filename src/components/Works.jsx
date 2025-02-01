@@ -5,7 +5,7 @@ const Works = () => {
       <div className="works-container">
         <div className="works-card">
           <img
-            src="/src/assets/restaurant.png"
+            src="./restaurant.png"
             alt="restaurant website image."
           />
           <h3>Restaurant Website</h3>
@@ -17,7 +17,7 @@ const Works = () => {
           </p>
         </div>
         <div className="works-card">
-          <img src="/src/assets/weather.png" alt="weather website image." />
+          <img src="./weather.png" alt="weather website image." />
           <h3>Weather</h3>
           <p>
             A dynamic weather app built with HTML, CSS, and JavaScript that
@@ -28,7 +28,7 @@ const Works = () => {
         </div>
         <div className="works-card">
           <img
-            src="/src/assets/todo.png"
+            src="./todo.png"
             alt="to do lists image."
           />
           <h3>To Do Lists</h3>
