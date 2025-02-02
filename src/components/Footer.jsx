@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <p style={{textAlign: 'center', padding: '50px 0px 20px 0px'}}>
-        Made with <span><FaHeart style={{fontSize: '0.7rem', color: 'white'}} /></span> by H a t e</p>
+        Made with <span><FaHeart style={{fontSize: '0.7rem', color: 'white'}} /></span> by Aron Rai.</p>
     </footer>
   )
 }
