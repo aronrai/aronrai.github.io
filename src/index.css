@@ -205,11 +205,12 @@ p {
 }
 
 .live {
+  font-size: 0.9rem;
   align-self: center;
   color: white;
   text-decoration: none;
   box-shadow: 0px 0px 3px white;
-  padding: 3px 7px;
+  padding: 3px 10px;
   border-radius: 15px;
   font-family: cursive;
 }
