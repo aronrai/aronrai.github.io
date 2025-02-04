@@ -6,14 +6,14 @@ const TypedText = () => {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ["a Web Developer.", "a MERN Stack Developer.", "a Gamer."], // Texts to type
-      typeSpeed: 50, // Typing speed
-      backSpeed: 30, // Backspacing speed
-      loop: true, // Infinite loop
+      strings: ["a Web Developer.", "a MERN Stack Developer.", "a Gamer."],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
     });
 
     return () => {
-      typed.destroy(); // Cleanup on unmount
+      typed.destroy();
     };
   }, []);
 
