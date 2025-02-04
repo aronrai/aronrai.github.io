@@ -160,7 +160,6 @@ p {
   flex-direction: column;
   gap: 10px;
   border: 1px solid white;
-  /* background: #00333f; */
   background: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: auto;
@@ -249,6 +248,7 @@ p {
 }
 
 .contact-logos a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: white;
   display: flex;
