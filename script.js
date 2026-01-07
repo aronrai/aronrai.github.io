@@ -1,5 +1,5 @@
-let ul = document.querySelector("ul");
-let hamburger = document.querySelector(".hamburger");
+const ul = document.querySelector("ul");
+const hamburger = document.querySelector(".hamburger");
 
 hamburger.addEventListener("click", () => {
   ul.classList.toggle("open");
@@ -10,15 +10,22 @@ hamburger.addEventListener("click", () => {
       ul.classList.remove("open");
       hamburger.classList.remove("active");
     });
+    ul.addEventListener("click", () => {
+      ul.classList.remove("open");
+    });
   });
 });
 
-let form = document.querySelector("form");
+const form = document.querySelector("form");
 
-form.addEventListener("submit", () => {
-  let name = document.querySelector("#name").value;
-  let message = document.querySelector("#message").value;
-  let finalMessage = `Hello, My name is ${name}. ${message}`;
-  const encodedMessage = encodeURIComponent(message);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = document.querySelector("#name").value;
+  const message = document.querySelector("#message").value;
+  const finalMessage = `Hello, My name is ${name}. ${
+    message || "I found you on Linkedin."
+  }`;
+  const encodedMessage = encodeURIComponent(finalMessage);
+  window.open(`https://wa.me/9564120965?text=${encodedMessage}`);
   console.log(encodedMessage);
 });

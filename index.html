@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem, ipsum.</title>
+    <title>Aron Rai | JavaScript Developer</title>
+    <link rel="icon" href="./assets/icons/favicon.png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Playfair+Display:wght@600;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Playfair+Display:wght@500;600;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +19,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p class="short-description">Learning in fragments.</p>
+    <p class="short-description">
+      Actively seeking a JavaScript developer role.
+    </p>
     <header>
       <div class="logo">Aron Rai</div>
       <nav>
@@ -38,72 +41,119 @@
     <main class="container">
       <section id="home">
         <h1>Hi, I'm Aron</h1>
-        <p>Turning confusion into working code, one late night at a time.</p>
+        <p>JavaScript developer turning confusion into working code.</p>
         <p>
-          I spend most of my days coding, debugging, learning, and repeating the
-          cycle until things finally make sense. I like understanding how things
-          work, not just making them work.
+          Most days are spent learning why something failed and how to make it
+          better the next time. I care more about understanding than shortcuts.
         </p>
         <div class="socials">
-          <i class="fa-brands fa-linkedin linkedin"></i>
-          <i class="fa-brands fa-github github"></i>
-          <i class="fa-solid fa-envelope mail"></i>
+          <a
+            href="https://www.linkedin.com/in/aronrai/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/aronrai"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github github"></i
+          ></a>
+          <a href="mailto:aron.dumi.rai@gmail.com"
+            ><i class="fa-solid fa-envelope mail"></i
+          ></a>
         </div>
       </section>
       <section id="about">
         <h1>About Me</h1>
         <p>
-          I am someone who spends most of my time writing code, breaking it,
-          fixing it, and trying to understand why it behaved the way it did. I
-          don’t claim to know everything, but I care deeply about learning
-          things properly and not just making them work by accident.
+          I am a JavaScript developer who spends most of my time writing code,
+          breaking it, fixing it, and understanding why it behaved the way it
+          did.
         </p>
-
         <p>
-          My days usually revolve around experimenting with ideas, building
-          small projects, and improving my understanding of how software systems
-          work under the hood. I enjoy the process of learning through trial,
-          error, and persistence.
+          I work primarily with JavaScript, focusing on building applications
+          while improving my understanding of how things work under the hood
+          rather than relying on surface-level solutions.
         </p>
-
         <p>
-          What keeps me interested in programming is the problem-solving. There
-          is something satisfying about taking a confusing problem, breaking it
-          into smaller pieces, and slowly turning it into something clear and
-          functional.
+          What keeps me engaged in development is problem-solving. I enjoy
+          taking unclear problems, breaking them into smaller parts, and turning
+          them into clear, working solutions.
         </p>
-
         <p>
-          I believe progress comes from consistency. Coding every day, even in
-          small amounts, adds up over time. Mistakes are part of the process,
-          and each bug is an opportunity to understand something a little better
-          than before.
+          I value strong fundamentals and clean, readable code. I prefer
+          learning concepts properly instead of making things work by accident.
         </p>
-
         <p>
-          This website exists as a simple record of my journey — the things I
-          have built, the ideas I am exploring, and the skills I am developing.
-          It is not a finished product, just like me.
+          Consistency drives my progress. Writing code every day, learning from
+          mistakes, and refining my approach over time helps me grow as a
+          developer.
         </p>
-
         <p>
-          I am focused on improving my fundamentals, writing clearer code, and
-          building projects that reflect real understanding rather than surface-
-          level knowledge.
+          This website exists as a record of my journey — the things I am
+          building, the ideas I am exploring, and the skills I am developing.
         </p>
-
-        <p>
-          If you are interested in what I am building or want to connect, feel
-          free to explore the rest of the site.
-        </p>
+        <p>It is not a finished product. Neither am I.</p>
       </section>
       <section id="projects">
-        <h1>Projects Page</h1>
+        <h1>Projects</h1>
+        <div class="projects-container">
+          <div class="card">
+            <img
+              src="./assets/images/website-under-construction.jpg"
+              alt="Website under construction"
+            />
+            <div class="project-details">
+              <h3>Personal Blog Website</h3>
+              <p>
+                Personal blog website currently under development. Focused on
+                improving structure, content, and overall functionality.
+              </p>
+              <div class="project-links">
+                <a href="" target="_blank" rel="noopener noreferrer"
+                  >Under development</a
+                >
+                <a
+                  href="https://github.com/aronrai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/website-under-construction.jpg"
+              alt="Website under construction"
+            />
+            <div class="project-details">
+              <h3>Weather Web App</h3>
+              <p>
+                A JavaScript-based weather application that fetches real-time
+                weather data using a public API. Built to practice API
+                integration, async handling, and UI updates.
+              </p>
+              <div class="project-links">
+                <a href="" target="_blank" rel="noopener noreferrer"
+                  >Under development</a
+                >
+                <a
+                  href="https://github.com/aronrai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <h1>Contact</h1>
         <form>
-          <input type="text" id="name" placeholder="Enter your name" />
+          <input type="text" id="name" placeholder="Enter your name" required />
           <textarea
             type="text"
             id="message"
