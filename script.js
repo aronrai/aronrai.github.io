@@ -34,5 +34,4 @@ form.addEventListener("submit", (e) => {
   }`;
   const encodedMessage = encodeURIComponent(finalMessage);
   window.open(`https://wa.me/9564120965?text=${encodedMessage}`);
-  console.log(encodedMessage);
 });
