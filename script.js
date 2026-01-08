@@ -16,14 +16,21 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+var typed = new Typed("#typed", {
+  strings: ["Aron", "a javaScript Developer"],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop: true,
+});
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = document.querySelector("#name").value;
   const message = document.querySelector("#message").value;
-  const finalMessage = `Hello, My name is ${name}. ${
-    message || "I found you on Linkedin."
+  const finalMessage = `Hi, I'm ${name}. ${
+    message || "I saw your site and wanted to reach out."
   }`;
   const encodedMessage = encodeURIComponent(finalMessage);
   window.open(`https://wa.me/9564120965?text=${encodedMessage}`);
