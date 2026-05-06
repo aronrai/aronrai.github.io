@@ -7,45 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
       body::-webkit-scrollbar {
         display: none;
       }
       body {
-        background: linear-gradient(45deg, lightblue, white);
+        background-color: #111;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <header
-      class="flex justify-between items-center mx-4 sm:mx-12 md:mx-16 lg:mx-32 h-16 border-b border-gray-200"
-    >
-      <div class="text-2xl font-[Playfair_Display] font-bold">Aron Rai</div>
-      <div class="w-6 flex flex-col gap-1 cursor-pointer">
-        <span class="h-0.5 w-full bg-black"></span>
-        <span class="h-0.5 w-3 bg-black"></span>
-        <span class="h-0.5 w-full bg-black"></span>
-      </div>
-    </header>
-    <main class="px-4 sm:px-12 md:px-16 lg:px-32 py-16 flex flex-col gap-8">
+    <main class="px-4 sm:px-12 md:px-16 lg:px-32 py-16 flex flex-col gap-16">
       <!-- Home -->
-      <section class="flex flex-col gap-8">
-        <h2 class="text-2xl font-[Playfair_Display] font-bold">Hello there,</h2>
-        <h1 class="text-4xl md:text-7xl font-[Playfair_Display] font-black">
-          My name is Aron Rai.
-        </h1>
-        <h2 class="text-2xl font-[Playfair_Display] font-bold">
-          I am a Software Developer
-        </h2>
-        <p class="text-sm text-gray-700 font-[Inter]">
+      <section class="flex flex-col gap-4">
+        <p class="text-sm">Hello there,</p>
+        <p class="text-sm">My name is Aron Rai.</p>
+        <p class="text-sm">I am a <span id="element" class="text-sm"></span></p>
+        <p class="text-sm">
           I build scalable, production-ready web applications with a focus on
           the JavaScript ecosystem. My work is centered on the MERN stack, where
           I bridge the gap between complex backend logic and intuitive,
@@ -55,85 +42,117 @@
         </p>
       </section>
       <!-- About -->
-      <section class="flex flex-col gap-8">
-        <h2 class="text-2xl font-[Playfair_Display] font-bold">About me</h2>
-        <p class="text-sm text-gray-700 font-[Inter]">
-          I am a software developer driven by the challenge of bridging the gap
-          between complex backend logic and intuitive user interfaces. I believe
-          that high-quality software should be as robust under the hood as it is
-          seamless on the surface.
+      <section class="flex flex-col gap-4">
+        <p class="text-sm">About Me</p>
+        <p class="text-sm">
+          I am a software developer with a deep focus on the JavaScript
+          ecosystem and a passion for building applications that are as robust
+          as they are intuitive. My work is centered on the MERN stack, where I
+          navigate the complexities of architecting scalable databases in
+          MongoDB and crafting secure, efficient APIs with Node.js and Express.
+          I believe that high-quality software isn't just about making things
+          work—it’s about creating systems that are production-ready and built
+          to scale from the very first line of code.
         </p>
-        <p class="text-sm text-gray-700 font-[Inter]">
-          My work is centered on the
-          <span class="font-bold">MERN stack</span>, utilizing MongoDB, Express,
-          React, and Node.js to build full-scale applications. A primary example
-          of this is <span class="font-bold">Blogspot</span>, a multi-user
-          platform where I implemented secure JWT authentication and Cloudinary
-          integration to handle real-world media and data management.
+        <p class="text-sm">
+          On the frontend, I utilize React and Zustand to manage complex state
+          with precision, ensuring a seamless experience for the end user. My
+          technical process is guided by a commitment to clean code and
+          architectural integrity, specifically when implementing features like
+          secure JWT authentication and cloud-based media management. I rely on
+          tools like Postman for rigorous testing and Git for version control,
+          maintaining a workflow that prioritizes quality, security, and
+          maintainability at every stage of development.
         </p>
-        <p class="text-sm text-gray-700 font-[Inter]">
-          To ensure every project is production-ready, I rely on a modern
-          toolkit including
-          <span class="font-bold">Zustand</span> for state management and
-          <span class="font-bold">Tailwind CSS</span> for responsive design. I
-          use Postman for rigorous API testing and Git for version control,
-          maintaining a workflow that prioritizes transparency and organization.
+        <p class="text-sm">
+          Bachelor of Computer Applications (2021-2024), St. Joseph's College,
+          Darjeeling, IN.
         </p>
-        <p class="text-sm text-gray-700 font-[Inter]">
-          Ultimately, I focus on clean code and architectural integrity. My goal
-          is to build software that isn't just functional, but performs
-          efficiently and remains maintainable as it scales.
-        </p>
+        <p class="text-sm">Professional Skillset</p>
+        <div class="flex items-center flex-wrap gap-2">
+          <div class="text-sm underline">javaScript</div>
+          <div class="text-sm underline">MongoDB</div>
+          <div class="text-sm underline">Express.js</div>
+          <div class="text-sm underline">React.js</div>
+          <div class="text-sm underline">Node.js</div>
+          <div class="text-sm underline">Tailwindcss</div>
+          <div class="text-sm underline">Git & GitHub</div>
+          <div class="text-sm underline">Postman</div>
+          <div class="text-sm underline">Zustand</div>
+          <div class="text-sm underline">Cloudinary</div>
+          <div class="text-sm underline">Render</div>
+        </div>
       </section>
       <!-- Projects -->
-      <section class="flex flex-col gap-8">
-        <h2 class="text-2xl font-[Playfair_Display] font-bold">My Projects</h2>
-        <div class="flex flex-col gap-1">
-          <h3 class="text-lg font-[Playfair_Display] font-medium">Blogspot</h3>
-          <p class="text-sm text-gray-700 font-[Inter]">
-            A multi-user blogging platform featuring secure JWT authentication,
-            Joi validation, and Cloudinary integration for media management.
-          </p>
-          <a
-            href="https://blogspot-29yc.onrender.com"
-            target="_blank"
-            class="text-sm font-[Playfair_Display] underline"
-            >Live</a
-          >
+      <section class="flex flex-col gap-4">
+        <p class="text-sm">My Projects</p>
+        <!-- Projects container -->
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-2">
+            <p class="text-sm">Blogspot</p>
+            <p class="text-sm">
+              A full-stack blogging and reading platform designed for seamless
+              content creation and discovery. Built using the MERN stack, the
+              application integrates JWT for robust authentication and
+              authorization, alongside Cloudinary for optimized media
+              management. The project focuses on bridging the gap between secure
+              backend architecture and a clean, user-centric interface, ensuring
+              a production-ready environment for both readers and writers.
+            </p>
+            <p>
+              <a
+                href="https://blogspot-29yc.onrender.com"
+                target="_blank"
+                class="text-sm underline"
+                >Live</a
+              >
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-sm">Lorem, ipsum.</p>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus optio sequi quia atque laudantium quod magnam
+              accusamus eum quisquam aspernatur impedit totam excepturi modi,
+              maxime ipsa at magni repellat rerum quas.
+            </p>
+            <p>
+              <a href="" target="_blank" class="text-sm underline">Live</a>
+            </p>
+          </div>
         </div>
       </section>
       <!-- Contact -->
-      <section class="flex flex-col gap-8">
-        <h2 class="text-2xl font-[Playfair_Display] font-bold">Contact</h2>
-        <p class="text-sm text-gray-700 font-[Inter]">
-          I am currently looking for new opportunities and interesting projects
-          to collaborate on.
-        </p>
+      <section class="flex flex-col gap-4">
+        <p class="text-sm">Connect</p>
         <div class="flex items-center gap-2">
           <a
             href="mailto:aron.dumi.rai@gmail.com"
             target="_blank"
-            class="text-sm font-[Playfair_Display] underline"
+            class="text-sm underline"
             >Email</a
           >
           <a
             href="https://github.com/aronrai"
             target="_blank"
-            class="text-sm font-[Playfair_Display] underline"
+            class="text-sm underline"
             >GitHub</a
           >
           <a
             href="https://linkedin.com/in/aronrai"
             target="_blank"
-            class="text-sm font-[Playfair_Display] underline"
+            class="text-sm underline"
             >Linkedin</a
           >
         </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer>
-      <p class="text-sm text-center font-[Inter] py-1">&copy;2026 Aron Rai.</p>
-    </footer>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer.", "MERN Stack Developer"],
+        typeSpeed: 70,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
