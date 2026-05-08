@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aron Rai &bull; Software Developer</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,21 +12,42 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <style>
       * {
         font-family: "Inter", sans-serif;
       }
+      body {
+        background-color: #111;
+        color: #fff;
+      }
       body::-webkit-scrollbar {
         display: none;
       }
-      body {
-        background-color: #111;
-        color: white;
+      .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform-origin: left;
+        animation: animateProgressBar linear;
+        animation-timeline: scroll();
+        z-index: 1000;
+      }
+      @keyframes animateProgressBar {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
       }
     </style>
   </head>
   <body>
+    <div class="progress-bar"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10"></div>
     <main class="px-4 sm:px-12 md:px-16 lg:px-32 py-16 flex flex-col gap-16">
       <!-- Home -->
       <section class="flex flex-col gap-4">
@@ -40,6 +62,12 @@
           architectural integrity to ensure every project is functional and
           ready for the real world.
         </p>
+        <a
+          href="./aron_rai_resume.pdf"
+          target="_blank"
+          class="text-sm px-2 py-0.5 w-fit border-x rounded-sm animate-bounce"
+          >View my resume</a
+        >
       </section>
       <!-- About -->
       <section class="flex flex-col gap-4">
@@ -65,10 +93,10 @@
           maintainability at every stage of development.
         </p>
         <p class="text-sm">
-          Bachelor of Computer Applications (2021-2024), St. Joseph's College,
-          Darjeeling, IN.
+          Education ~ Bachelor of Computer Applications (2021-2024), St.
+          Joseph's College, Darjeeling, IN.
         </p>
-        <p class="text-sm">Professional Skillset</p>
+        <p class="text-sm">Tech Stack</p>
         <div class="flex items-center flex-wrap gap-2">
           <div class="text-sm underline">javaScript</div>
           <div class="text-sm underline">MongoDB</div>
@@ -88,7 +116,7 @@
         <p class="text-sm">My Projects</p>
         <!-- Projects container -->
         <div class="flex flex-col gap-4">
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 p-4 border-l rounded-2xl">
             <p class="text-sm">Blogspot</p>
             <p class="text-sm">
               A full-stack blogging and reading platform designed for seamless
@@ -99,26 +127,32 @@
               backend architecture and a clean, user-centric interface, ensuring
               a production-ready environment for both readers and writers.
             </p>
-            <p>
-              <a
-                href="https://blogspot-29yc.onrender.com"
-                target="_blank"
-                class="text-sm underline"
-                >Live</a
-              >
-            </p>
+            <a
+              href="https://blogspot-29yc.onrender.com"
+              target="_blank"
+              class="text-sm"
+              >Live site</a
+            >
           </div>
-          <div class="flex flex-col gap-2">
-            <p class="text-sm">Lorem, ipsum.</p>
+          <div class="flex flex-col gap-2 p-4 border-r rounded-2xl">
+            <p class="text-sm">Project name</p>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              ut, laborum maxime eligendi ratione molestiae dolore nisi beatae,
+              animi quibusdam consequuntur commodi explicabo perferendis. Quasi
+              provident delectus alias similique ex asperiores numquam deleniti.
+            </p>
+            <a href="" target="_blank" class="text-sm">Live site</a>
+          </div>
+          <div class="flex flex-col gap-2 p-4 border-l rounded-2xl">
+            <p class="text-sm">Project name</p>
             <p class="text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus optio sequi quia atque laudantium quod magnam
-              accusamus eum quisquam aspernatur impedit totam excepturi modi,
-              maxime ipsa at magni repellat rerum quas.
+              Dignissimos minus numquam odio, ab ea pariatur laborum suscipit
+              voluptate est sit beatae doloribus veniam eveniet temporibus.
+              Soluta iste repellat pariatur cupiditate quasi? Inventore, ex?
             </p>
-            <p>
-              <a href="" target="_blank" class="text-sm underline">Live</a>
-            </p>
+            <a href="" target="_blank" class="text-sm">Live site</a>
           </div>
         </div>
       </section>
@@ -144,17 +178,74 @@
             class="text-sm underline"
             >Linkedin</a
           >
+          <a
+            href="https://wa.me/919564120965?text=Hello%20Aron,%20"
+            target="_blank"
+            class="text-sm underline"
+            >WhatsApp</a
+          >
         </div>
       </section>
     </main>
     <footer class="px-4 sm:px-12 md:px-16 lg:px-32 pb-4">
       <p class="text-sm">~ &copy2026 Aron Rai.</p>
     </footer>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: ["Software Developer.", "MERN Stack Developer."],
         typeSpeed: 70,
         loop: true,
+      });
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 100,
+            density: { enable: true, value_area: 800 },
+          },
+          color: { value: "#fff" },
+          shape: { type: "circle" },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 2,
+            random: true,
+            anim: { enable: false },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "bubble" },
+            onclick: { enable: false },
+          },
+          modes: {
+            bubble: {
+              distance: 200,
+              size: 4,
+              duration: 2,
+              opacity: 0.8,
+              speed: 3,
+            },
+          },
+        },
+        retina_detect: true,
       });
     </script>
   </body>
